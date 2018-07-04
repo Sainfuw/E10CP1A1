@@ -11,7 +11,7 @@ end
 
 module Attendance
   def student_quantity
-    "Cantidad de alumnos #{self.quantity}"
+    "Cantidad de alumnos #{quantity}"
   end
 end
 
