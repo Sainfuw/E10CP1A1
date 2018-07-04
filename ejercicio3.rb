@@ -27,5 +27,5 @@ class Car < Vehicle
   end
 end
 
-10.times { |car| Car.new(car,car) }
+10.times { |car| Car.new(car, car) }
 Car.instances
