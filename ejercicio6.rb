@@ -10,20 +10,23 @@ module Test
 end
 
 module Attendance
-  def self.student_quantity
-    "Cantidad de alumnos #{@@quantity}"
+  def student_quantity
+    "Cantidad de alumnos #{self.quantity}"
   end
 end
 
 class Student
   include Test
-  include Attendance
+  extend Attendance
   @@quantity = 0
   def initialize(nombre, nota1 = 4, nota2 = 4)
     @nombre = nombre
     @nota1 = nota1
     @nota2 = nota2
     @@quantity += 1
+  end
+  def self.quantity
+    @@quantity
   end
 end
 
