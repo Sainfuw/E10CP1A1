@@ -1,6 +1,6 @@
 module Test
   def result
-    prom = @nota1 + @nota2 / 2
+    prom = @nota1 + @nota2 / 2.0
     if prom > 4
       return 'Estudiante aprobrado'
     else
